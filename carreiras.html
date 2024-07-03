@@ -106,6 +106,15 @@
                         <button type="submit" class="btn-submit">Enviar Candidatura</button>
                     </div>
                 </form>
+                        <script>
+                                     document.getElementById('application-form').addEventListener('submit', function(event) {
+                                    event.preventDefault(); // Evita o envio real do formulário
+                                    alert('Mensagem enviada com sucesso!');
+                                    // Aqui você pode adicionar código para realmente enviar o formulário, se necessário.
+                                    window.location.reload();
+                                });
+                        </script>
+
             </section>
         </section>
     </main>

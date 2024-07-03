@@ -175,15 +175,15 @@ label {
     height: 20px; /* altura */
     border: 1px solid #ffffff; /* borda da caixa de seleção */
     border-radius: 2px; /* borda arredondada */
-    background-color: #000000; /* cor de fundo */
+    background-color: #1707ff; /* cor de fundo */
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .privacidade input[type="checkbox"]:checked::before {
-    background-color: #ed0707e9; /* cor de fundo quando marcado */
-    border-color: #000000; /* cor da borda quando marcado */
+    background-color: white; /* cor de fundo quando marcado */
+    border-color: #000003; /* cor da borda quando marcado */
 }
 
 button{
