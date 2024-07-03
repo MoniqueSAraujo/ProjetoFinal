@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family:'Game of squid';
+    src: url('/fonts/Game\ Of\ Squids.otf');
+}
+
+body{
+    
+    font-family: 'game of squid';
+    background-image: url('/assets/background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: transparent;
+    position: absolute;
+    width: 90%;
+    top: 0;
+}
+
+.logo img {
+    height: 120px;
+    width: 180px;
+    border-radius: 60px;
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+nav ul li a:hover {
+    color: #52648b; /* Muda para azul céu noturno quando o mouse está sobre o link */
+}
+  /*a:visited {
+    color: #007efc; /* Cor azul para links visitados 
+  }*/
+
+
+.reserve-btn {
+    background-color: #9157fc;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reserve-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.hero  {
+    font-size: 30px;
+    width:100%;
+    margin: 0;
+    text-align: center;
+
+}
+
+
+
+footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    color: white;
+}
+
+.social-media {
+    display: inline-block;
+    justify-content: right;
+    gap: 100px;
+    align-items: left;
+    margin-bottom: 10px;
+    margin-left:1000px;
+    flex-wrap: wrap;
+}
+
+.social-media a img {
+    width: 30px;
+}

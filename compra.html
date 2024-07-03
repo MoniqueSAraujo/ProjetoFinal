@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Pacote de Viagens</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    
+
+    <header>
+       
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Helius Starship">
+            <a href="home.html">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="frotas.html">Naves</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <a href="compra.html" class="reserve-btn">Reserve o seu voo</a>
+    </header>
+
+    
+    <div class="container">
+        <h1>Agende sua próxima aventura</h1>
+        <form id="purchase-form">
+            <label for="package">Pacote:</label>
+            <select id="package" name="package">
+                <option value="1">Turismo - BTC</option>
+                <option value="2">Empresarial - BTC </option>
+                <option value="3">Pesquisa - BTC </option>
+                <option value="4">Colonização - BTC</option>
+            </select>
+
+            <label for="package">Selecione seu Destino</label>
+            <select id="package" name="package">
+                <option value="1">CENTAURI-B</option>
+                <option value="2">TEENGARDEN-B</option>
+                <option value="3"> TOOI-700D </option>
+                <option value="4">TRAPPIST-1D</option>
+                <option value="5">KEPLER-1649C</option>
+                <option value="6">ROSS 128B</option>
+                <option value="7">WOLF 1061C</option>
+                <option value="8">KAPTEY-B</option>
+                <option value="9">K2-18B</option>
+                <option value="10">GJ 1002B</option>
+            </select>
+            
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Holofone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="departure-date">Data de Ida:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+            
+            <label for="return-date">Data de Volta:</label>
+            <input type="date" id="return-date" name="return-date" required>
+            
+            <button type="submit">Comprar</button>
+        </form>
+        
+        <div id="thank-you-message" class="hidden">
+            <h2>Obrigado pela compra!</h2>
+            <p>Entraremos em contato.</p>
+        </div>
+
+        <script src="/script.js/compra.js"></script>
+
+
+    </div>
+    <footer>
+        <div class="container5">
+            <div class="f1">
+                <h3 class="titulo">Quem somos</h3>
+                <ul>
+                    <li><a href="about.html">Sobre nós</a></li>
+                    <li><a href="galeria.html">Galerias</a></li>
+                </ul>
+            </div>
+
+            <div class="f2">
+                <h3 class="titulo">Trabalhe conosco</h3>
+                <ul>
+                    <li><a href="carreiras.html">Carreiras</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="f3">
+                <h3 class="titulo">Conta</h3>
+                <ul>
+                    <li><a href="/login/login.html">Minha Conta</a></li>
+                    <li><a href="informacao.html">Informações</a></li>
+                </ul>
+            </div>
+
+            <div class="midia">
+                <h3 class="titulo">Siga a Hellius</h3>
+                <ul>
+                    <li><a href="instagram"><img src="/assets/instagram.png" alt="Instagram" width="24" height="24"></a></li>
+                    <li><a href="facebook"><img src="/assets/facebook.png" alt="Facebook" width="24" height="24"></a></li>
+                    <li><a href="x"><img src="/assets/twitter.png" alt="X" width="24" height="24"></a></li>
+                    <li><a href="youtube"><img src="/assets/youtube.png" alt="Youtube" width="24" height="24"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copy">
+            <p>2024 &copy HELIUS Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

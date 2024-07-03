@@ -1,0 +1,233 @@
+
+    @font-face {
+        font-family: "Game of Squids";
+        src:url("/fonts/Game\ Of\ Squids.otf"); 
+            
+        }
+
+body{
+    font-family: "Game of Squids";
+	margin: 0;
+	padding: 0;
+    background-image: linear-gradient(to top, #AB90DD, #6B21F8);
+    background-size: 100%; 
+     color:white
+}
+
+
+
+header {
+
+    color: #fff;
+    font-family: "Game of Squids";
+	background-image: url(/assets/silhouette1.jpeg);
+	background-size: cover;
+    min-height: 250px;
+    background-position: center;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	/*flex-direction: column;*/
+	position: relative;
+    font-size: 20px;
+    top: 0;
+   
+}
+
+.logo img {
+    height: 120px;
+    width: 180px;
+    border-radius: 60px;
+   margin-left: 20%;
+    
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+    
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Game of Squids";
+    
+}
+
+
+nav ul li a:hover {
+    color: #52648b; /* Muda para azul céu noturno quando o mouse está sobre o link */
+}
+  /*a:visited {
+    color: #007efc; /* Cor azul para links visitados 
+  }*/
+
+
+.reserve-btn {
+    background-color: #9157fc;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1%;
+
+}
+
+.reserve-btn:hover {
+    background-color: #0056b3;
+}
+
+.intro{
+    margin-top: 70px;
+    font-family: "Game of Squids";
+    text-align: center;
+    font-size: 30px;
+    color: #AB90DD;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-top: 50px;
+}
+
+
+
+.secao4 {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.secao4-div-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color:#6B21F8;
+    transition: all 0.5s ease;
+    
+}
+
+ .secao4-div-card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+} 
+
+.secao4-div-card:hover {
+    background-color: #560d56;
+}
+
+.secao4-div-card img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.secao4-div-card img {
+    width: 200px;
+    height: 200px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 25px;
+    font-family: "Game of Squids";
+}
+
+.secao4-div-card h3 {
+    margin-bottom: 30px;
+    margin-top: 30PX;
+    color: white;
+    font-family: "Game of Squids";
+}
+.secao4-div-card P{
+    color: white;
+    font-family: "Game of Squids";
+}
+
+.selecionado {
+    border: 2px solid #007bff; /* borda azul ao ser selecionado */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* sombra ao ser selecionado */
+}
+
+
+.container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: flex-end;
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    font-family: "Game of Squids";
+}
+
+footer div ul li a {
+    text-decoration: none;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+
+.f1 ul, .f2 ul, .f3 ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */  
+}
+
+
+.midia ul {
+    padding-left: 0; /* Remove o padding padrão da esquerda */
+}
+.midia ul li {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+
+
+.midia ul li{
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+/* --------------------------------------------------------- */
+
+.copy{
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Game of Squids";
+}
+
+.copy {
+    margin-right: 15px;/*afasta os itens*/
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: blue;
+}
+

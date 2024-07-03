@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esqueceu a Senha</title>
+<link rel="stylesheet" href="senha.css">
+</head>
+<body>
+<div class="container">
+    <h2>Recuperação de Senha</h2>
+    <p>Por favor, escolha uma senha que contenha pelo menos uma letra minúscula, uma letra maiúscula e um número.</p>
+    <form id="resetPasswordForm" onsubmit="return validatePasswords();">
+        <label for="password">Nova Senha:</label>
+        <input type="password" id="password" name="password" required oninput="updatePasswordDisplay('password')">
+        <label for="confirmPassword">Confirmar Nova Senha:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required oninput="updatePasswordDisplay('confirmPassword')">
+        <div id="passwordMessage" class="message"></div>
+        <button type="submit">Redefinir Senha</button>
+    </form>
+</div>
+<script src="senha.js"></script>
+</body>
+</html>

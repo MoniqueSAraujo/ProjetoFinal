@@ -1,0 +1,291 @@
+
+@font-face {
+    font-family: "Squids.otf";
+    src:
+      url("/fonts/Game\ Of\ Squids.otf  ") format("truetype");
+      
+    }
+    
+body {
+    font-family: "Squids.otf";
+	margin: 0;
+	padding: 0;
+    background-image: linear-gradient(to top, #AB90DD, #6B21F8);
+    /* background-size: 100%; */
+}
+
+header {
+    width: 100%;
+	height: 30%;
+	/* min-height: 250px; */
+	background-image: url(/assets/carreiras.jpeg.jpg);
+	background-size: cover;
+    background-position: center;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	/*flex-direction: column;*/
+	position: absolute;
+    top: 0;
+    opacity: 90%;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 120px;
+    width: 180px;
+    border-radius: 60px;
+    padding-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+    padding-left: 20px;
+    
+}
+
+nav ul li a:hover {
+    color: #52648b; /* Muda para azul céu noturno quando o mouse está sobre o link */}
+
+.reserve-btn {
+        background-color: #9157fc;
+        color: white;
+        padding: 5px 5px;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+.reserve-btn:hover {
+        background-color: #0056b3;
+    }
+
+  
+  .career-header {
+    padding-top: 300px;
+    padding-bottom: 100px;
+    /* padding: 50px 20px; */
+    text-align: center;
+    color: #fff;
+}
+
+.career-header h1 {
+    font-size: 36px;
+}
+
+.career-header p {
+    font-size: 18px;
+}
+
+.career-roles {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+
+}
+
+.career-roles .role {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.career-roles .role:last-child {
+    border-bottom: none;
+}
+
+.career-roles .role h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #6B21F8;
+    text-shadow: rgb(2, 2, 2);
+}
+
+.career-roles .role p {
+    margin-bottom: 10px;
+    color:  #AB90DD;
+
+}
+
+/* styles.css */
+
+.career-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.5s;
+}
+
+.career-roles.scrolled {
+    opacity: 0.9;
+    transition: opacity 0.5s;
+}
+
+.career-application {
+ color:  #6B21F8;   
+
+}
+.message{
+    padding: 1px;
+    padding-inline: 2px;
+    width: 801px;
+    height: 89px;
+}
+
+.submit {
+    margin-top: 70px;
+}
+
+.btn-submit{
+    background-color: #9157fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Game of squids';
+}
+
+.btn-link:hover {
+    background-color: #0056b3;
+}
+.container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: flex-end;
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    font-family: "Squids.otf";
+    color: white;
+}
+
+footer div ul li a {
+    text-decoration: none;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+
+.f1 ul, .f2 ul, .f3 ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */  
+}
+
+
+.midia ul {
+    padding-left: 0; /* Remove o padding padrão da esquerda */
+}
+.midia ul li {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+
+
+.midia ul li{
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+/* --------------------------------------------------------- */
+
+.copy{
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Squids.otf';
+}
+
+.copy {
+    margin-right: 15px;/*afasta os itens*/
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+ 
+
+footer div ul li a {
+    text-decoration: none;
+    font-family: "Squids.otf";
+    
+}
+
+footer a{
+    color: white;
+      font-family: 'Game of Squids.otf';
+}
+
+footer a:hover {
+    color: blue;
+    
+}
+
+
+.f1 ul, .f2 ul, .f3 ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */  
+    color: white;
+    
+}
+
+
+
+
+.midia ul {
+    padding-left: 0; /* Remove o padding padrão da esquerda */
+}
+.midia ul li {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+
+
+.midia ul li{
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+/* --------------------------------------------------------- */
+
+.copy{
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Squids.otf';
+}
+
+.copy {
+    margin-right: 15px;/*afasta os itens*/
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+}

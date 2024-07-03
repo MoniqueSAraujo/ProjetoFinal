@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Squids.otf";
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #AB90DD, #6B21F8);
+    
+}
+
+@font-face {
+    font-family: "Squids.otf";
+    src: url('/fonts/Game\ Of\ Squids.otf ');
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    width: 100%;
+    font-family: "Squids.otf";
+    background-image: url(/assets/silhouette1.jpeg);
+   
+	
+}
+
+.reserve-btn {
+    background-color: #9157fc;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 12px;
+    /*font-size: large;*/
+}
+
+.reserve-btn:hover {
+    background-color: #0056b3;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px; /*Aumenta o tamanho da fonte*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+.logo img {
+    height: 120px;
+    width: 180px;
+    border-radius: 60px;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #52648b;
+}
+
+
+/* -------------------- body ---------------------------*/
+
+
+
+form {
+    color: white;
+    max-width: 1000px; /* Define a largura máxima do formulário */
+    margin: auto; /* Centraliza horizontalmente */
+    padding: 40px; /* Adiciona um espaço interno ao redor do formulário */
+    margin-top: 300px;
+}
+
+
+fieldset{
+    border: 0;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+
+.campo{
+    padding-right: 1em;
+}
+
+input{
+    border-radius: 6px;
+    font-size: 1em;
+
+}
+
+
+.campo{
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    color: white;
+    width: calc(50% - 10px);
+    padding: 8px; /* Espaçamento interno para o texto dentro do input */
+    margin-bottom: 18px; /* Espaçamento inferior entre os campos */
+    border: 2px solid white; /* Borda branca */
+    border-radius: 9px;
+    box-sizing: border-box; 
+    background-color: transparent;
+    align-self: start;
+    width: 56.4em;
+}
+
+ /*arrumar a largura do input*/
+.campo input[type="text"] {
+    width: 428px; /* Defina o tamanho desejado aqui */
+}
+
+label {
+    display: block; /* Faz com que os labels fiquem em linha verticalmente */
+    margin-bottom: 6px; /* Espaçamento inferior entre os labels */
+}
+
+
+
+
+.privacidade{
+    margin-bottom: 70px;
+
+}
+
+.privacidade input[type="checkbox"] {
+    /* Estilizando a caixa de seleção */
+    width: 20px; /* largura */
+    height: 20px; /* altura */
+    margin-right: 10px; /* margem à direita para separar do texto */
+    vertical-align: middle; /* alinhar verticalmente com o texto */
+    position: relative;
+    top: -1px; /* ajuste fino para alinhar melhor com o texto */
+}
+
+
+.privacidade input[type="checkbox"]::before {
+    content: '';
+    display: inline-block;
+    width: 20px; /* largura */
+    height: 20px; /* altura */
+    border: 1px solid #ffffff; /* borda da caixa de seleção */
+    border-radius: 2px; /* borda arredondada */
+    background-color: #000000; /* cor de fundo */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.privacidade input[type="checkbox"]:checked::before {
+    background-color: #ed0707e9; /* cor de fundo quando marcado */
+    border-color: #000000; /* cor da borda quando marcado */
+}
+
+button{
+    background-color: blue;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease; /* Adiciona transição suave na mudança de cor */
+    outline: none;
+    border: none;
+}
+
+
+button:hover {
+    background-color: rgb(11, 6, 91); /* Cor que o botão terá ao passar o mouse por cima */
+}
+
+
+
+/*----------------Footer--------------------*/
+
+.container5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: flex-end;
+    margin-top: 100px;
+    font-family: "Squids.otf";
+    color: white;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.f1 ul, .f2 ul, .f3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.midia ul li {
+    display: inline-block;
+}
+
+.copy {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.copy {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: blue;
+}
+

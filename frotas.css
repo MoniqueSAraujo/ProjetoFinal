@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    @font-face {
+        font-family: "Squids.otf";
+        src:
+          url("/fonts/Game\ Of\ Squids.otf") format("truetype"),
+            url(/fonts/Game\ Of\ Squids.ttf) format("truetype")
+        }
+
+body{
+   background-image: linear-gradient(to top, #AB90DD, #6B21F8);
+   font-family: 'Squids.otf';
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}
+
+.logo img {
+    height: 100px;
+    width: 120px;
+    border-radius: 60px;
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+nav ul li a:hover {
+    color: #52648b; /* Muda para azul céu noturno quando o mouse está sobre o link */
+}
+  /*a:visited {
+    color: #007efc; /* Cor azul para links visitados 
+  }*/
+
+
+.reserve-btn {
+    background-color: #9157fc;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reserve-btn:hover {
+    background-color: #0056b3;
+}
+
+.inicio {
+    background: url(/assetsnav/frotas.jpg);
+    height: 70vh;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container1{
+    display: inline-flex;
+    padding-top: 100px;
+}
+.container1 .estatico{
+    color: #d376fb;
+    font-size: 50px;
+    font-weight: 400;
+    align-items: center;
+    padding: 20px;
+    padding-left: 200px;
+}
+.container1 .dinamico{
+    margin-left: 15px;
+    line-height: 95px;
+    height: 100px;
+    overflow: hidden;
+}
+.dinamico li{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 50px;
+    font-weight: 400;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /* border-left: 2px solid rgb(198, 145, 255); */
+    animation: typing 1.5s steps(10 infinite);
+    /* background: rgb(151, 156, 253); */
+}
+.dinamico li span{
+    position: relative;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/* 
+#titulo{
+    font-family:'Charmonman';
+    font-size: 40px;
+    line-height: 90px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 150px;
+} */
+
+.sub-titulo h1{
+    font-family: 'Squids.otf';
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px ;
+    color: #AB90DD;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.sub-titulo{
+    box-shadow: 0 0 10px 0 rgb(208, 195, 251);
+}
+
+/* .nomes ul{
+    display: flex;
+    text-align: center;
+    color: black;
+    font-size: 10px;
+    list-style: none;
+    gap: 80px;
+    padding-left: 50px;
+    padding-top: 50px ;
+
+} */
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+   
+     
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card span{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: filter 0.2s, border 0.2s;
+    
+    
+}
+
+/* Efeito de hover */
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para o card selecionado */
+input[type="radio"]:checked + .card img {
+    filter: grayscale(100%) brightness(0.8);
+    border: 3px solid #3498db;
+}
+
+
+.fotos h1{
+    text-align: center;
+    font-family: 'Squids.otf';
+    font-size: 50px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    color: #AB90DD;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,5vw);
+    grid-gap: 15px;
+    
+}
+
+.galeria_img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);}
+
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria_item--1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+ 
+.galeria_item--2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.galeria_item--3{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.galeria_item--4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 7;
+
+}
+
+ .galeria_item--5{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+
+.galeria_item--6{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.galeria_item--7{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
+
+}
+.galeria_item--8{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+
+}
+
+
+
+
+.container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: flex;
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    color:white;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+.f1 ul, .f2 ul, .f3 ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    color:white;
+}
+
+.midia ul li{
+    display: inline-block;
+}
+
+.copy{
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    text-align: center;
+    font-family: 'Squid.otf';
+}
+
+.copy a{
+    margin-right: 15px;/*afasta os itens*/
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+footer a:hover {
+    color: blue;
+}
+
+

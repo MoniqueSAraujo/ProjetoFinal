@@ -1,0 +1,243 @@
+@font-face {
+    font-family:'Game of squid';
+    src: url('/fonts/Game\ Of\ Squids.otf ');
+}
+
+body {
+	/*width: 100%;
+	height: 100%;*/
+    font-family: 'game of squid';
+	margin: 0;
+	padding: 0;
+    background-image: linear-gradient(to top, #AB90DD, #6B21F8);
+    background-size: 100%;
+}
+
+/*.logo {
+    height: 120px;
+    width: 1100px;
+    border-radius: 60px;
+ 
+   
+}*/
+
+header {
+	color: #fff;
+
+	background-image: url(/assets/silhouette1.jpeg);
+	background-size: cover;
+    min-height: 250px;;
+    background-position: center;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	/*flex-direction: column;*/
+	position: relative;
+    font-size: 18px;
+    top: 0;
+    
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+	height: 100%;
+    padding: 100%;
+    font-size:3px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.logo img {
+    height: 120px;
+    width: 180px;
+    border-radius: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li  a{
+    margin-left: 20px;
+    text-decoration: none;
+    color:white;
+    font-size: 24px;
+}
+
+nav ul  {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+h1{
+
+    position: relative;
+    text-shadow: 0.1em 0.1em 0.5em #333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin-top:  50px;
+    font-size: 24px;
+    
+}
+h2{
+
+    position: relative;
+    text-shadow: 0.1em 0.1em 0.5em;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin-top:  50px;
+    font-size: 24px;
+    
+}
+
+
+/*.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.header-content h1 {
+    font-size: 30px;
+    margin-top:  500px;
+}
+
+.header-content h2 {
+    font-size: 24px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+main {
+    padding: 50px 20px;
+    background-color: #663399;
+}*/
+
+.reserve-btn {
+    background-color: #9157fc;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 12px;
+    /*font-size: large;*/
+}
+
+.reserve-btn:hover {
+    background-color: #0056b3;
+}
+.planet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.planet {
+    text-align: center;
+}
+
+.planet img {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.planet p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: flex-end;
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    color:white;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+.f1 ul, .f2 ul, .f3 ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    color:white;
+}
+
+.f2 ul{
+    margin-bottom: 18px;
+    color:white;
+}
+
+/* ------------------Espaçamento das tags li -------------*/
+
+.midia ul {
+    padding-left: 0; /* Remove o padding padrão da esquerda */
+}
+.midia ul li {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    color:white;
+}
+
+
+
+.midia ul li{
+    display: inline-block;
+    margin-bottom: 28px;
+    color:white;
+}
+
+/* --------------------------------------------------------- */
+
+.copy{
+    margin-top: 100px; /*O conteudo fica mais abaixo da tela*/
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.copy a{
+    margin-right: 15px;/*afasta os itens*/
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: blue;
+}
